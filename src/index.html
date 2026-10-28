@@ -1,50 +1,310 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <link rel="stylesheet" href="assets/styles/style.css">
     <meta charset="UTF-8">
-    <title>Главная страница</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <!-- Шапка сайта -->
-    <header>
-        <img src="../static/logo.png" alt="Логотип" width="100">
-        <nav>
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
+    <!-- Шапка сайта и навигация -->
+    <header class="site-header">
+        <nav class="site-navigation">
+            <div class="logo">
+                <img src="static/logo" alt="Логотип IT Website">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#projects">Проекты</a></li>
+                <li><a href="#team">Команда</a></li>
+                <li><a href="#faq">FAQ</a></li>
             </ul>
-        </nav> 
-        <div class="breadcrumbs">
-        <span>Главная</span>
-    </div>
+        </nav>
     </header>
 
-    <main>
-        <h1 class="main-title">Добро пожаловать на сайт</h1>
-        <p class="text-paragraph">Здесь представлена основная информация о нашем проекте и услугах.</p>
-        
-        <h3 class="section-title">О нашей компании</h3>
-        <h4 class="sub-title">Современные веб-технологии для бизнеса</h4>
-        <p class="text-paragraph">Мы разрабатываем качественные и быстрые веб-приложения, помогая вашему бизнесу расти в цифровой среде.</p>
-        
-        <h3 class="section-title">Наши преимущества:</h3>
-        <p class="text-paragraph">Надежность, скорость и индивидуальный подход к каждому клиенту.</p>
-        
+    <hr>
+
+    <!-- Основное содержимое сайта -->
+    <main class="main-content">
+
+        <!-- Первый экран (Hero) -->
+        <section class="hero-section">
+            <div class="hero-info">
+                <h1>Development of mobile applications and web services of any complexity</h1>
+                <p>We help businesses to scale their production processes via custom IT solutions.</p>
+                <form class="hero-form">
+                    <input type="text" placeholder="Your name">
+                    <input type="tel" placeholder="Phone number">
+                    <button type="submit">Contact us</button>
+                </form>
+            </div>
+            <div class="hero-media">
+                <img src="static/iteka" alt="Приложения на экранах телефонов">
+            </div>
+        </section>
+
         <hr>
+
+        <!-- Секция полного цикла разработки -->
+        <section class="development-cycle-section" id="services">
+            <h2>Full development cycle</h2>
+            <p>We use proven technologies</p>
+            
+            <div class="development-container">
+                <!-- Левая колонка с технологиями -->
+                <div class="development-details">
+                    <article class="tech-category">
+                        <h3>Web</h3>
+                        <p>PHP / Javascript / Node.JS / Web Socket / Socket.io / Vue.js / Nuxt / MySQL / Laravel / GO lang / django / Python</p>[cite: 6]
+                    </article>
+                    
+                    <article class="tech-category">
+                        <h3>Mobile</h3>
+                        <p>Swift / Kotlin / Alamofire / Firebase / CoreData / Room / Realm / Coroutine / RxJava / RxSwift / Unit Test / Navigation</p>[cite: 6]
+                    </article>
+                </div>
+
+                <!-- Правая колонка с направлениями -->
+                <aside class="development-nav-aside">
+                    <ul>
+                        <li>iOS development ></li>[cite: 6]
+                        <li>Android development ></li>[cite: 6]
+                        <li>Web development ></li>[cite: 6]
+                        <li>UI/UX design ></li>[cite: 6]
+                        <li>Testing ></li>[cite: 6]
+                        <li>Launch ></li>[cite: 6]
+                        <li>IT consulting ></li>[cite: 6]
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Секция индустрий -->
+        <section class="industries-section">
+            <h2>Developed more than 100 projects in 15 industries</h2>
+            
+            <div class="industries-grid">
+                <!-- Первая колонка -->
+                <div class="industries-column">
+                    <div class="industry-item">
+                        <img src="static/icon-social media" alt="Social media icon">
+                        <span>Social media</span>[cite: 5]
+                    </div>
+                    <div class="industry-item">
+                        <img src="static/icon-fitnes and sport" alt="Fitness and sport icon">
+                        <span>Fitness and sport</span>[cite: 5]
+                    </div>
+                    <div class="industry-item">
+                        <img src="static/icon-bank" alt="Bank icon">
+                        <span>Bank</span>[cite: 5]
+                    </div>
+                    <div class="industry-item">
+                        <img src="static/icon-construction" alt="Construction icon">
+                        <span>Construction</span>[cite: 5]
+                    </div>
+                    <div class="industry-item">
+                        <img src="static/icon-game projects" alt="Game projects icon">
+                        <span>Game projects</span>[cite: 5]
+                    </div>
+                </div>
+
+                <!-- Вторая колонка -->
+                <div class="industries-column">
+                    <div class="industry-item">
+                        <img src="static/icon-education" alt="Education icon">
+                        <span>Education</span>[cite: 5]
+                    </div>
+                    <div class="industry-item">
+                        <img src="static/icon-auto transport" alt="Auto transport icon">
+                        <span>Auto, transport</span>[cite: 5]
+                    </div>
+                    <div class="industry-item">
+                        <img src="static/icon-medicine, health" alt="Medicine health icon">
+                        <span>Medicine, health</span>[cite: 5]
+                    </div>
+                    <div class="industry-item">
+                        <img src="static/icon-restaurants, food delivery" alt="Restaurants food delivery icon">
+                        <span>Restaurants, food delivery</span>[cite: 5]
+                    </div>
+                    <div class="industry-item">
+                        <img src="static/icon-marketplace" alt="Marketplaces icon">
+                        <span>Marketplaces</span>[cite: 5]
+                    </div>
+                </div>
+
+                <!-- Третья колонка -->
+                <div class="industries-column">
+                    <div class="industry-item">
+                        <img src="static/icon-ar" alt="AR technology icon">
+                        <span>AR technology</span>[cite: 5]
+                    </div>
+                    <div class="industry-item">
+                        <img src="static/icon-tv series" alt="TV series icon">
+                        <span>TV series</span>[cite: 5]
+                    </div>
+                    <div class="industry-item">
+                        <img src="static/icon-startups" alt="Startups icon">
+                        <span>Startups</span>[cite: 5]
+                    </div>
+                    <div class="industry-item">
+                        <img src="static/icon-religion" alt="Religion icon">
+                        <span>Religion</span>[cite: 5]
+                    </div>
+                    <div class="industry-item">
+                        <img src="static/icon-online cources" alt="Online courses icon">
+                        <span>Online courses</span>[cite: 5]
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Портфолио проектов -->
+        <section class="portfolio-section" id="projects">
+            <h2>Projects we are proud of</h2>
+            <p>Our software development company is truly proud of the wonderful clients we have worked with. We enjoy a long-term partnership</p>
+
+            <div class="projects-tabs">
+                <button class="tab-btn active">I-teka</button>[cite: 7]
+                <button class="tab-btn">Dauletten</button>[cite: 7]
+                <button class="tab-btn">Guru Bosch</button>[cite: 7]
+                <button class="tab-btn">Santo</button>[cite: 7]
+                <button class="tab-btn">Home Credit Bank</button>[cite: 7]
+                <button class="tab-btn">BI Partners</button>[cite: 7]
+                <button class="tab-btn">Europharma</button>[cite: 7]
+                <a href="#" class="more-projects-btn">View 100 more projects</a>[cite: 7]
+            </div>
+
+            <div class="project-card-container">
+                <article class="project-details">
+                    <h3>I-teka</h3>[cite: 7]
+                    <p>The application is designed to search for drugs by availability in pharmacies in cities. During quarantine, the application helped many people, which gives more value.</p>[cite: 7]
+                    
+                    <p class="project-tags">Business analysis / iOS / Android / QA / UI/UX Design</p>[cite: 7]
+                    
+                    <div class="project-meta">
+                        <span> Kazakhstan</span>[cite: 7]
+                        <span> Medicine</span>[cite: 7]
+                    </div>
+
+                    <div class="project-stats">
+                        <div class="stat-item">
+                            <strong>400%</strong>[cite: 7]
+                            <span>User Growth</span>[cite: 7]
+                        </div>
+                        <div class="stat-item">
+                            <strong>+ 200 000</strong>[cite: 7]
+                            <span>Active Users</span>[cite: 7]
+                        </div>
+                    </div>
+                </article>
+
+                <div class="project-media">
+                    <img src="static/iteka" alt="Скриншоты приложения I-teka на смартфонах">[cite: 7]
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Секция обсуждения проекта -->
+        <section class="discussion-section">
+            <div class="discussion-text">
+                <h2>Let's discuss your project</h2>
+                <p>Leave your contacts and we will call you back within 30 minutes.</p>
+            </div>
+            <form class="discussion-form">
+                <input type="text" placeholder="Name">
+                <input type="tel" placeholder="Phone">
+                <button type="submit">Send request</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- Этапы разработки -->
+        <section class="stages-section">
+            <h2>Application Development Stages</h2>
+            <div class="stages-grid">
+                <article class="stage-item">
+                    <h3>Analysis</h3>
+                    <p>We collect requirements and analyze your business processes.</p>
+                </article>
+                <article class="stage-item">
+                    <h3>Design</h3>
+                    <p>We create wireframes and UI/UX design prototypes.</p>
+                </article>
+                <article class="stage-item">
+                    <h3>Development</h3>
+                    <p>Writing clean code and integrating APIs.</p>
+                </article>
+                <article class="stage-item">
+                    <h3>Testing</h3>
+                    <p>We carry out functional testing and do bug fixes. We adapt the application to different phone resolutions.</p>[cite: 4]
+                </article>
+                <article class="stage-item">
+                    <h3>Launching</h3>
+                    <p>We design the application page and publish it in the App Store and Google Play stores.</p>[cite: 4]
+                </article>
+                <article class="stage-item">
+                    <h3>Support</h3>
+                    <p>We monitor the stability of the application, update it for new devices and versions of iOS and Android.</p>[cite: 4]
+                </article>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Команда -->
+        <section class="team-section" id="team">
+            <h2>Our team</h2>
+            <p>Experienced specialists ready to bring your ideas to life.</p>
+            <div class="team-stats">
+                <div><strong>28</strong> experts</div>
+                <div><strong>+100</strong> projects</div>
+                <div><strong>7 years</strong> on market</div>
+            </div>
+            <img src="static/team" alt="Наша команда">
+        </section>
+
+        <hr>
+
+        <!-- Лид-магнит (Книга) -->
+        <section class="lead-magnet-section">
+            <div class="book-info">
+                <h2>Get the book for free by leaving your contacts</h2>
+                <form class="book-form">
+                    <input type="email" placeholder="Your email">
+                    <button type="submit">Download book</button>
+                </form>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- FAQ -->
+        <section class="faq-section" id="faq">
+            <h2>FAQ</h2>
+            <details>
+                <summary>How long does it take to build a mobile application?</summary>
+                <p>Timelines depend on complexity, usually ranging from 2 to 6 months.</p>
+            </details>
+            <details>
+                <summary>Do you provide post-launch support?</summary>
+                <p>Yes, we provide ongoing maintenance, bug fixes, and updates.</p>
+            </details>
+        </section>
+
     </main>
 
-    <!-- Подвал сайта -->
-    <footer>
-        <h3 class="section-title">Свяжитесь с нами</h3>
-        <p class="text-paragraph">Будем рады ответить на любые ваши вопросы в рабочее время.</p>
-        <hr>
-        <ul>
-            <li>Главный офис компании</li>
-            <li>+7 (999) 123-45-67</li>
-            <li>studentTYUMGU@gmail.com</li>
-        </ul>
-        <p class="text-paragraph">Все права защищены</p>
+    <hr>
+
+    <!-- 3. Подвал сайта -->
+    <footer class="site-footer">
+        <div class="footer-col">IT Website</div>
+        <div class="footer-col">+1 (234) 567-890</div>
+        <div class="footer-col">info@itwebsite.com</div>
     </footer>
 
 </body>
